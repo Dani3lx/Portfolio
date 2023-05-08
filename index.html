@@ -48,9 +48,9 @@
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
         <div class="nav__btns">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-ellipsis-h nav__icon""></i>
-            </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-ellipsis-h nav__icon"></i>
+          </div>
         </div>
       </nav>
     </header>
@@ -61,28 +61,70 @@
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
-              <a href="https://www.linkedin.com/in/1danielxu/" target="_blank" class="home__social-icon">
+              <a
+                href="https://www.linkedin.com/in/1danielxu/"
+                target="_blank"
+                class="home__social-icon"
+              >
                 <i class="uil uil-linkedin"></i>
               </a>
-              <a href="https://github.com/Dani3lx" target="_blank" class="home__social-icon">
+              <a
+                href="https://github.com/Dani3lx"
+                target="_blank"
+                class="home__social-icon"
+              >
                 <i class="uil uil-github"></i>
               </a>
             </div>
 
             <div class="home__img">
-              <svg id="visual" viewBox="0 0 775 400" width="390" height="360" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                <g transform="translate(418.9738756637949 204.03855591971686)"><path id="blob1" d="M210.2 -12.1C254.3 67.4 259.4 215.7 189.4 268.4C119.3 321.2 -25.9 278.3 -104.5 206.4C-183.1 134.5 -195.2 33.6 -166.7 -24.4C-138.2 -82.4 -69.1 -97.5 7 -99.7C83.1 -102 166.1 -91.5 210.2 -12.1" fill="none" stroke="#62ffa0" stroke-width="6"></path></g>
-                <g transform="translate(508.7383435299603 230.0702361879139)" style="visibility: hidden"><path id="blob2" d="M199.4 -31.2C230.2 29.9 207.4 142 129.6 204.6C51.9 267.2 -80.7 280.5 -182.8 214.9C-284.9 149.4 -356.4 5.2 -320.9 -62.5C-285.3 -130.2 -142.7 -121.4 -29.2 -111.9C84.3 -102.4 168.7 -92.3 199.4 -31.2" fill="none" stroke="#62ffa0" stroke-width="6"></path></g>
+              <svg
+                id="visual"
+                viewBox="0 0 900 900"
+                width="380"
+                height="380"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+              >
+                <g transform="translate(447.8463751797407 378.72440796894296)">
+                  <path
+                    id="blob1"
+                    d="M216.9 -186.9C284.4 -149.4 344.7 -74.7 360.4 15.7C376.1 106.1 347.1 212.1 279.6 286.1C212.1 360.1 106.1 402.1 1.2 400.9C-103.7 399.7 -207.4 355.4 -271.9 281.4C-336.4 207.4 -361.7 103.7 -360.2 1.5C-358.6 -100.6 -330.3 -201.3 -265.8 -238.8C-201.3 -276.3 -100.6 -250.7 -13 -237.7C74.7 -224.7 149.4 -224.4 216.9 -186.9"
+                    fill="#62ffa0"
+                  ></path>
+                </g>
+                <g
+                  transform="translate(530.4594432630339 437.5948622687617)"
+                  style="visibility: hidden"
+                >
+                  <path
+                    id="blob2"
+                    d="M144.2 -164.4C182.4 -106.1 205.7 -53 209.9 4.2C214.2 61.5 199.4 123 161.2 187.9C123 252.7 61.5 320.9 -3.1 323.9C-67.6 327 -135.3 265 -210.3 200.1C-285.3 135.3 -367.6 67.6 -371.4 -3.8C-375.2 -75.2 -300.4 -150.4 -225.4 -208.7C-150.4 -267 -75.2 -308.5 -11.1 -297.4C53 -286.4 106.1 -222.7 144.2 -164.4"
+                    fill="#62ffa0"
+                  ></path>
+                </g>
+                <g
+                  transform="translate(426.8041988461332 443.73839954595496)"
+                  style="visibility: hidden"
+                >
+                  <path
+                    id="blob3"
+                    d="M245.5 -240.1C317.5 -173.5 374.7 -86.7 363.1 -11.7C351.4 63.4 270.8 126.8 198.8 201.8C126.8 276.8 63.4 363.4 5.2 358.2C-53 353 -106.1 256.1 -170.1 181.1C-234.1 106.1 -309 53 -317.4 -8.4C-325.8 -69.8 -267.5 -139.5 -203.5 -206.2C-139.5 -272.9 -69.8 -336.4 8.5 -344.9C86.7 -353.4 173.5 -306.8 245.5 -240.1"
+                    fill="#62ffa0"
+                  ></path>
+                </g>
               </svg>
 
               <script>
                 const tween = KUTE.fromTo(
-                  '#blob1',
-                  { path: 'blob1 '},
-                  { path: 'blob2 '},
-                  { repeat: 999, duration: 3000, yoyo: true }
-                )
-                tween.start()
+                  "#blob1",
+                  { path: "#blob1" },
+                  { path: "#blob2" },
+                  // { path: "#blob3" },
+                  { repeat: 999, duration: 2000, yoyo: true}
+                );
+                tween.start();
               </script>
             </div>
 
@@ -93,7 +135,6 @@
                 Contact Me <i class="uil uil-message button__icon"></i>
               </a>
             </div>
-
           </div>
           <div class="home__scroll">
             <a href="#about" class="home__scroll-button">
