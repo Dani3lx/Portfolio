@@ -4,88 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Xu | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Unicon -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
       rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- SVG transformation -->
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+    <title>Daniel's Portfolio</title>
   </head>
   <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <!-- logo -->
-        <a href="#home" id="navbar__logo">Home</a>
-        <!-- hamburger bars -->
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+    <!-- header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Daniel</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-home nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user-circle nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-suitcase-alt nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
+        <div class="nav__btns">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-ellipsis-h nav__icon""></i>
+            </div>
+        </div>
+      </nav>
+    </header>
 
-        <!-- Nav bar menu -->
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#about" class="navbar__links" id="about-page">About</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#projects" class="navbar__links" id="projects-page"
-              >Projects</a
-            >
-          </li>
-          <li class="navbar__btn">
-            <a href="#contact" class="button" id="contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Main -->
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a href="https://www.linkedin.com/in/1danielxu/" target="_blank" class="home__social-icon">
+                <i class="uil uil-linkedin"></i>
+              </a>
+              <a href="https://github.com/Dani3lx" target="_blank" class="home__social-icon">
+                <i class="uil uil-github"></i>
+              </a>
+            </div>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-      <div class="hero__container">
-        <div class="wrap-layer">
-          <div class="text-layer">
-            <p class="hero__description">Hello, I’m Daniel</p>
-            <h1 class="hero__heading">Software Engineer & Web Developer</h1>
-            <button class="main__btn"><a href="#about">▼</a></button>
+            <div class="home__img">
+              <svg id="visual" viewBox="0 0 775 400" width="390" height="360" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(418.9738756637949 204.03855591971686)"><path id="blob1" d="M210.2 -12.1C254.3 67.4 259.4 215.7 189.4 268.4C119.3 321.2 -25.9 278.3 -104.5 206.4C-183.1 134.5 -195.2 33.6 -166.7 -24.4C-138.2 -82.4 -69.1 -97.5 7 -99.7C83.1 -102 166.1 -91.5 210.2 -12.1" fill="none" stroke="#62ffa0" stroke-width="6"></path></g>
+                <g transform="translate(508.7383435299603 230.0702361879139)" style="visibility: hidden"><path id="blob2" d="M199.4 -31.2C230.2 29.9 207.4 142 129.6 204.6C51.9 267.2 -80.7 280.5 -182.8 214.9C-284.9 149.4 -356.4 5.2 -320.9 -62.5C-285.3 -130.2 -142.7 -121.4 -29.2 -111.9C84.3 -102.4 168.7 -92.3 199.4 -31.2" fill="none" stroke="#62ffa0" stroke-width="6"></path></g>
+              </svg>
+
+              <script>
+                const tween = KUTE.fromTo(
+                  '#blob1',
+                  { path: 'blob1 '},
+                  { path: 'blob2 '},
+                  { repeat: 999, duration: 3000, yoyo: true }
+                )
+                tween.start()
+              </script>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Daniel</h1>
+              <h3 class="home__subtitle">WebDev/Software Engineer</h3>
+              <a href="#contact" class="button">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+
           </div>
-          <div class="background-layer">
-            <svg
-              width="100%"
-              height="100%"
-              viewBox="0 0 1440 1047"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="blob1" clip-path="url(#clip0_22_26)">
-                <g id="botGroup">
-                  <path
-                    id="botb"
-                    d="M920.8 1047C923.36 967.777 925.92 888.729 960.32 830.271C994.72 771.988 1060.96 734.296 1112.96 690.322C1165.12 646.523 1202.88 596.092 1255.04 560.145C1307.2 524.198 1373.6 502.385 1440 480.747V1047H920.8Z"
-                    fill="#FBAE3C"
-                  />
-                </g>
-                <g id="topGroup">
-                  <path
-                    id="topb"
-                    d="M519.2 0C518.56 80.7935 517.92 161.587 479.68 216.729C441.44 271.871 365.44 301.362 311.2 339.402C256.8 377.269 224 423.512 175.68 462.774C127.52 501.862 63.68 534.145 0 566.253V0H519.2Z"
-                    fill="#FBAE3C"
-                  />
-                </g>
-              </g>
-              <defs>
-                <clipPath id="clip0_22_26">
-                  <rect width="1440" height="1047" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button">
+              <i class="uil uil-arrow-circle-down"></i>
+              <span class="home__scroll-name">Learn More</span>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-    <script src="app.js"></script>
+      </section>
+    </main>
+
+    <!-- https://youtu.be/27JtRAI3QO8?t=2293 -->
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
