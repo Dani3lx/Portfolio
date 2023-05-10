@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -134,9 +136,129 @@
           </div>
         </div>
       </section>
+
+      <!-- About -->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">Introduction</span>
+
+        <div class="about__data">
+          <p class="about__description">
+            I am currently pursuing a Computer Science Specialist program at the
+            University of Toronto, with a focus on software development and web
+            development.
+          </p>
+          <p class="about__description">
+            I have hands-on experience working on projects in both fields, and
+            am comfortable with various programming languages, including Python,
+            Java, C, and SQL. As an ambitious and dedicated learner, I am
+            constantly seeking new challenges and opportunities to contribute my
+            skills and knowledge.
+          </p>
+
+          <div class="about__buttons">
+            <a download="" href="assets/Daniel_Xu_Resume.pdf" class="button">
+              My CV <i class="uil uil-file-download button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">My Most Recent Works</span>
+
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!-- projects-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/project1.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Video-Entertainment-System</h3>
+                <p class="portfolio__description">
+                  A Java app for creating, sharing, and interacting with videos
+                  and playlists.
+                </p>
+                <a
+                  href="https://github.com/Dani3lx/Video-Entertainment-System/tree/master/phase2"
+                  target="_blank"
+                  class="button button--small portfolio__button"
+                >
+                  Link <i class="uil uil-link button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/project2.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">AuctioZone</h3>
+                <p class="portfolio__description">
+                  Dynamic e-commerce auction website similar to eBay,
+                  facilitating the posting and closing of listings, placing
+                  bids, and adding items to the watchlist for real-time updates.
+                </p>
+                <a
+                  href="https://github.com/Dani3lx/commerce"
+                  target="_blank"
+                  class="button button--small portfolio__button"
+                >
+                  Link <i class="uil uil-link button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/project3.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">CO(VISION)</h3>
+                <p class="portfolio__description">
+                  Python-based application that analyzes the impact of COVID-19
+                  on various industries.
+                </p>
+                <a
+                  href="https://github.com/victor-zheng-codes/CSC110-Project"
+                  target="_blank"
+                  class="button button--small portfolio__button"
+                >
+                  Link <i class="uil uil-link button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </section>
     </main>
 
-    <!-- https://youtu.be/27JtRAI3QO8?t=2293 -->
+    <!-- https://youtu.be/27JtRAI3QO8?t=6580 -->
+
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- JS -->
     <script src="assets/js/main.js"></script>
   </body>
