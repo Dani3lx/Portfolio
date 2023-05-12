@@ -1,3 +1,4 @@
+<!-- https://youtu.be/27JtRAI3QO8?t=7422 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,25 +24,25 @@
     <!-- header -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Daniel</a>
+        <a href="#" class="nav__logo" title="Home">Daniel</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
-            <li class="nav__item">
+            <li class="nav__item" title="Home">
               <a href="#home" class="nav__link">
                 <i class="uil uil-home nav__icon"></i> Home
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item" title="About">
               <a href="#about" class="nav__link">
                 <i class="uil uil-user-circle nav__icon"></i> About
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item" title="Portfolio">
               <a href="#portfolio" class="nav__link">
                 <i class="uil uil-suitcase-alt nav__icon"></i> Portfolio
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item" title="Contact">
               <a href="#contact" class="nav__link">
                 <i class="uil uil-message nav__icon"></i> Contact
               </a>
@@ -49,7 +50,11 @@
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
+
         <div class="nav__btns">
+          <!-- Change theme -->
+          <i class="uil uil-moon change-theme" id="theme-button" title="Change Theme"></i>
+
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-ellipsis-h nav__icon"></i>
           </div>
@@ -67,6 +72,7 @@
                 href="https://www.linkedin.com/in/1danielxu/"
                 target="_blank"
                 class="home__social-icon"
+                title="linkedin"
               >
                 <i class="uil uil-linkedin"></i>
               </a>
@@ -74,6 +80,7 @@
                 href="https://github.com/Dani3lx"
                 target="_blank"
                 class="home__social-icon"
+                title="github"
               >
                 <i class="uil uil-github"></i>
               </a>
@@ -82,7 +89,7 @@
             <div class="home__img">
               <svg
                 id="visual"
-                viewBox="0 0 900 800"
+                viewBox="130 130 770 650"
                 width="100%"
                 height="100%"
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +100,6 @@
                   <path
                     id="blob1"
                     d="M215.2 -216.1C252.7 -177.7 238.9 -88.9 227.9 -11C216.9 66.9 208.9 133.9 171.4 202.2C133.9 270.5 66.9 340.3 -3.9 344.2C-74.7 348.1 -149.4 286.1 -224.4 217.8C-299.4 149.4 -374.7 74.7 -389.9 -15.2C-405.1 -105.1 -360.2 -210.2 -285.2 -248.6C-210.2 -286.9 -105.1 -258.5 -8.1 -250.3C88.9 -242.2 177.7 -254.4 215.2 -216.1"
-                    fill="#62ffa0"
                   ></path>
                 </g>
                 <g
@@ -103,7 +109,6 @@
                   <path
                     id="blob2"
                     d="M206.1 -175.4C281.1 -131.1 365.5 -65.5 359.3 -6.2C353 53 256.1 106.1 181.1 180.9C106.1 255.7 53 352.4 -13.9 366.3C-80.8 380.2 -161.7 311.4 -232 236.5C-302.4 161.7 -362.2 80.8 -353.3 8.8C-344.5 -63.2 -267 -126.3 -196.7 -170.7C-126.3 -215 -63.2 -240.5 1.2 -241.7C65.5 -242.9 131.1 -219.7 206.1 -175.4"
-                    fill="#62ffa0"
                   ></path>
                 </g>
               </svg>
@@ -116,7 +121,6 @@
                   { repeat: 999, duration: 3000, yoyo: true }
                 );
                 tween.start();
-                tween2.start();
               </script>
             </div>
 
@@ -142,24 +146,27 @@
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">Introduction</span>
 
-        <div class="about__data">
-          <p class="about__description">
-            I am currently pursuing a Computer Science Specialist program at the
-            University of Toronto, with a focus on software development and web
-            development.
-          </p>
-          <p class="about__description">
-            I have hands-on experience working on projects in both fields, and
-            am comfortable with various programming languages, including Python,
-            Java, C, and SQL. As an ambitious and dedicated learner, I am
-            constantly seeking new challenges and opportunities to contribute my
-            skills and knowledge.
-          </p>
+        <div class="about__container container grid">
+          <img class="about__img" src="assets/img/uoft.png" alt="Uoft campus" />
+          <div class="about__data">
+            <p class="about__description">
+              I am currently pursuing a Computer Science Specialist program at
+              the University of Toronto, with a focus on software development
+              and web development.
+            </p>
+            <p class="about__description">
+              I have hands-on experience working on projects in both fields, and
+              am comfortable with various programming languages, including
+              Python, Java, C, and SQL. As an ambitious and dedicated learner, I
+              am constantly seeking new challenges and opportunities to
+              contribute my skills and knowledge.
+            </p>
 
-          <div class="about__buttons">
-            <a download="" href="assets/Daniel_Xu_Resume.pdf" class="button">
-              My CV <i class="uil uil-file-download button__icon"></i>
-            </a>
+            <div class="about__buttons">
+              <a download="" href="assets/Daniel_Xu_Resume.pdf" class="button" title="Download CV">
+                My CV <i class="uil uil-file-download button__icon"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -175,7 +182,7 @@
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/project1.png"
-                alt=""
+                alt="computer code"
                 class="portfolio__img"
               />
 
@@ -190,7 +197,7 @@
                   target="_blank"
                   class="button button--small portfolio__button"
                 >
-                  Link <i class="uil uil-link button__icon"></i>
+                  Project Link <i class="uil uil-link button__icon"></i>
                 </a>
               </div>
             </div>
@@ -198,7 +205,7 @@
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/project2.jpg"
-                alt=""
+                alt="Various commerce item coming out of a phone"
                 class="portfolio__img"
               />
 
@@ -222,7 +229,7 @@
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/project3.jpg"
-                alt=""
+                alt="Cartoon covid virus"
                 class="portfolio__img"
               />
 
@@ -251,11 +258,84 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
+      </section>
 
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get In Touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <!-- Phone -->
+            <div class="contact__information">
+              <i class="uil uil-phone-alt contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">416-527-1538</span>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact__information">
+              <i class="uil uil-envelopes contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">1danielxu@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <form
+              action="https://getform.io/f/0efd2aaf-bc26-4464-bd39-ff1bbfbb48d0"
+              method="POST"
+              class="contact__form grid"
+            >
+              <div class="contact__inputs grid">
+                <div class="contact__content">
+                  <label for="" class="contact__label">Your Name</label>
+                  <input type="text" name="name" class="contact__input" />
+                </div>
+
+                <div class="contact__content">
+                  <label for="" class="contact__label">Your Email</label>
+                  <input type="email" name="email" class="contact__input" />
+                </div>
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="contact__label">Subject</label>
+                <input type="text" name="subject" class="contact__input" />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea
+                  name="message"
+                  id=""
+                  cols="0"
+                  rows="7"
+                  class="contact__input"
+                ></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="button">
+                  Send Message
+                  <i class="uil uil-message button__icon"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
-    <!-- https://youtu.be/27JtRAI3QO8?t=6580 -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
 
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
