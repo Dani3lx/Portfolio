@@ -1,10 +1,3 @@
 # Site settings
 title: Daniel's Portfolio
 description: A portfolio website showcasing the work of Daniel
-url: https://daniel.github.io
-baseurl: ""
-
-# Build settings
-markdown: kramdown
-permalink: /:title/
-timezone: America/New_York
